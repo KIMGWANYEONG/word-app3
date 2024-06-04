@@ -9,14 +9,14 @@ const Home: FC = () => {
   return (
     <Flex flexDir="column" maxW={768} mx="auto" minH="100vh">
       <Text fontSize={48} fontWeight="bold" textAlign="center" mt={8}>
-        Word App
+        영어공부 도우미
       </Text>
       <Flex flexDir="column" mt={8} gap={4} px={4}>
         {sampleData.map((v: IWords) => (
           <Button
             key={v.day}
             variant="outline"
-            colorScheme="green"
+            colorScheme="blue"
             justifyContent="start"
             isTruncated={true}
             onClick={() =>
@@ -36,7 +36,7 @@ const Home: FC = () => {
           <Button
             key={v.day}
             variant="outline"
-            colorScheme="green"
+            colorScheme="blue"
             justifyContent="start"
             isTruncated={true}
             onClick={() =>
